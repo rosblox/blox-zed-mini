@@ -1,0 +1,54 @@
+{
+  "configById": {
+    "3D Panel!3ppfwlc": {
+      "autoSyncCameraState": false,
+      "autoTextBackgroundColor": true,
+      "cameraState": {
+        "distance": 3.1628723401716847,
+        "perspective": true,
+        "phi": 0.5655828965402423,
+        "targetOffset": [
+          -0.17675262830656294,
+          0.42670688537144913,
+          0
+        ],
+        "thetaOffset": -0.38273038423301387,
+        "fovy": 0.7853981633974483,
+        "near": 0.01,
+        "far": 5000
+      },
+      "checkedKeys": [
+        "t:/tf",
+        "t:/foxglove/grid",
+        "ns:/tf:base_link",
+        "ns:/tf:odom",
+        "ns:/tf:zedm_base_link"
+      ],
+      "clickToPublishPoseTopic": "/move_base_simple/goal",
+      "clickToPublishPointTopic": "/clicked_point",
+      "clickToPublishPoseEstimateTopic": "/initialpose",
+      "clickToPublishPoseEstimateXDeviation": 0.5,
+      "clickToPublishPoseEstimateYDeviation": 0.5,
+      "clickToPublishPoseEstimateThetaDeviation": 0.26179939,
+      "customBackgroundColor": "#000000",
+      "diffModeEnabled": true,
+      "expandedKeys": [],
+      "followMode": "follow",
+      "followTf": "odom",
+      "modifiedNamespaceTopics": [
+        "/tf"
+      ],
+      "pinTopics": true,
+      "settingsByKey": {},
+      "useThemeBackgroundColor": true
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 1,
+    "messageOrder": "receiveTime"
+  },
+  "layout": "3D Panel!3ppfwlc"
+}
