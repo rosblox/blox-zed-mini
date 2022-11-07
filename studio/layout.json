@@ -1,46 +1,110 @@
 {
   "configById": {
-    "3D Panel!3ppfwlc": {
-      "autoSyncCameraState": false,
-      "autoTextBackgroundColor": true,
+    "3D!3bn92n9": {
+      "followTf": "odom",
+      "followMode": "follow-pose",
       "cameraState": {
-        "distance": 3.1628723401716847,
         "perspective": true,
-        "phi": 0.5655828965402423,
+        "distance": 5.018445541350861,
+        "phi": 75.31130181281685,
+        "thetaOffset": 62.16231555051083,
         "targetOffset": [
-          -0.17675262830656294,
-          0.42670688537144913,
+          0,
+          0,
           0
         ],
-        "thetaOffset": -0.38273038423301387,
-        "fovy": 0.7853981633974483,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
         "near": 0.01,
         "far": 5000
       },
-      "checkedKeys": [
-        "t:/tf",
-        "t:/foxglove/grid",
-        "ns:/tf:base_link",
-        "ns:/tf:odom",
-        "ns:/tf:zedm_base_link"
-      ],
-      "clickToPublishPoseTopic": "/move_base_simple/goal",
-      "clickToPublishPointTopic": "/clicked_point",
-      "clickToPublishPoseEstimateTopic": "/initialpose",
-      "clickToPublishPoseEstimateXDeviation": 0.5,
-      "clickToPublishPoseEstimateYDeviation": 0.5,
-      "clickToPublishPoseEstimateThetaDeviation": 0.26179939,
-      "customBackgroundColor": "#000000",
-      "diffModeEnabled": true,
-      "expandedKeys": [],
-      "followMode": "follow",
-      "followTf": "odom",
-      "modifiedNamespaceTopics": [
-        "/tf"
-      ],
-      "pinTopics": true,
-      "settingsByKey": {},
-      "useThemeBackgroundColor": true
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "topics": {
+        "/tf": {
+          "visible": true
+        },
+        "/foxglove/grid": {
+          "visible": true
+        }
+      },
+      "transforms": {
+        "frame:zedm_imu_link": {
+          "visible": false
+        },
+        "frame:zedm_left_camera_frame": {
+          "visible": false
+        },
+        "frame:base_link": {
+          "visible": true
+        },
+        "frame:odom": {
+          "visible": true
+        },
+        "frame:zedm_base_link": {
+          "visible": false
+        },
+        "frame:zedm_camera_center": {
+          "visible": false
+        },
+        "frame:zedm_left_camera_optical_frame": {
+          "visible": false
+        },
+        "frame:zedm_right_camera_frame": {
+          "visible": false
+        },
+        "frame:zedm_right_camera_optical_frame": {
+          "visible": false
+        },
+        "frame:map": {
+          "visible": false
+        }
+      },
+      "scene": {
+        "enableStats": true,
+        "ignoreColladaUpAxis": false
+      },
+      "layers": {
+        "b2665963-d676-4059-861b-f300c8327aca": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "b2665963-d676-4059-861b-f300c8327aca",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 1
+        }
+      }
     }
   },
   "globalVariables": {},
@@ -50,5 +114,5 @@
     "speed": 1,
     "messageOrder": "receiveTime"
   },
-  "layout": "3D Panel!3ppfwlc"
+  "layout": "3D!3bn92n9"
 }
