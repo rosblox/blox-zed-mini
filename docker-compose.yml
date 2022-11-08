@@ -29,11 +29,5 @@ services:
     privileged: true
     volumes:
       - ./ros-zed-ros2-wrapper/settings:/usr/local/zed/settings
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [ gpu ]
+    runtime: nvidia
     command: ros2 launch zed_wrapper zedm.launch.py
